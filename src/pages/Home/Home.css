@@ -1,0 +1,27 @@
+.Home {
+  color: #2c97d1;
+}
+
+.welcome {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.challenge {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 7px;
+  margin-bottom: 9rem;
+}
+
+.button-start {
+  width: 189px;
+  height: 56px;
+  background: #2c97d1;
+  border-radius: 10px;
+  border-color: #2c97d1 !important;
+}
