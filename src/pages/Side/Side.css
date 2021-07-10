@@ -1,0 +1,48 @@
+.App {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.button-restart {
+  width: 347px;
+  height: 56px;
+  background: #fff;
+  border-radius: 10px;
+  border-color: #fff !important;
+  font-size: 18px;
+  color: #2a2a2a;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-back {
+  position: absolute;
+  display: flex;
+  color: #fff !important;
+  font-size: 18px;
+  align-content: center;
+  left: 0;
+}
+
+.button-back span {
+  margin-left: 1.25rem;
+}
+
+.button-back i {
+  font-size: 24px;
+}
+
+.master {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin: 93px auto;
+}
