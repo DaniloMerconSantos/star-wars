@@ -78,7 +78,6 @@
 }
 
 img {
-    max-width: 380px;
     border-radius: 50%;
     display: block;
     margin: 93px auto;
@@ -89,5 +88,9 @@ img {
     .side-light .button-restart {
         order: 3;
         margin-top: 1rem;
+    }
+    .master span,
+    .master b {
+        display: block;
     }
 }

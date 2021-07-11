@@ -49,9 +49,9 @@ const Side: React.FC<RouteComponentProps> = ({ history }) => {
           choose your path again, Padawan
         </Button>
         {parseSide() === "dark" ? (
-          <img src={dark} alt="master" />
+          <img className="img-fluid" src={dark} alt="master" />
         ) : (
-          <img src={light} alt="master" />
+          <img className="img-fluid" src={light} alt="master" />
         )}
         <div className="master">
           <span>Your master is </span>

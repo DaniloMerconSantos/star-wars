@@ -7,19 +7,17 @@ import "./App.css";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <Suspense fallback={<Loader />}>
-        <SideProvider>
-          <Router>
-            <Switch>
-              {routes.map((route) => (
-                <Route {...route} key={route.path} />
-              ))}
-            </Switch>
-          </Router>
-        </SideProvider>
-      </Suspense>
-    </div>
+    <Suspense fallback={<Loader />}>
+      <SideProvider>
+        <Router>
+          <Switch>
+            {routes.map((route) => (
+              <Route {...route} key={route.path} />
+            ))}
+          </Switch>
+        </Router>
+      </SideProvider>
+    </Suspense>
   );
 };
 
