@@ -1,5 +1,10 @@
 .Home {
   color: #2c97d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .welcome {
@@ -25,4 +30,8 @@
   border-radius: 10px;
   border-color: #2c97d1 !important;
   font-size: 18px;
+}
+
+.button-start:disabled {
+  opacity: 0.5;
 }

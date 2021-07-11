@@ -1,48 +1,93 @@
-.App {
-  background-color: #2b2b2b;
-  color: #fff;
+.side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.side-dark {
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+.side-dark .button-restart {
+    background: #fff;
+    border-color: #fff !important;
+    color: #2a2a2a;
+}
+
+.side-dark .button-back {
+    color: #fff !important;
+}
+
+.side-light {
+    background-color: #fbfe63;
+    color: #2a2a2a;
+}
+
+.side-light .button-restart {
+    background: #2a2a2a;
+    border-color: #2a2a2a !important;
+    color: #fbfe63;
+}
+
+.side-light .button-back {
+    color: #2a2a2a !important;
 }
 
 .button-restart {
-  width: 347px;
-  height: 56px;
-  background: #fff;
-  border-radius: 10px;
-  border-color: #fff !important;
-  font-size: 18px;
-  color: #2a2a2a;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
+    width: 100%;
+    max-width: 347px;
+    height: 56px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.button-restart:disabled {
+    opacity: 0.5;
 }
 
 .button-back {
-  position: absolute;
-  display: flex;
-  color: #fff !important;
-  font-size: 18px;
-  align-content: center;
-  left: 0;
+    position: absolute;
+    display: flex;
+    font-size: 18px;
+    align-content: center;
+    left: 1rem;
+    top: 1rem;
 }
 
 .button-back span {
-  margin-left: 1.25rem;
+    margin-left: 1.25rem;
 }
 
 .button-back i {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .master {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 44px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
 }
 
 img {
-  border-radius: 50%;
-  display: block;
-  margin: 93px auto;
+    max-width: 380px;
+    border-radius: 50%;
+    display: block;
+    margin: 93px auto;
+}
+
+@media (max-width: 800px) {
+    .side-dark .button-restart,
+    .side-light .button-restart {
+        order: 3;
+        margin-top: 1rem;
+    }
 }

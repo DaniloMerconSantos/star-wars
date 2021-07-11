@@ -3,10 +3,10 @@
 .App {
   text-align: center;
   background-color: #fff;
-  min-height: 100vh;
-  justify-content: center;
+  min-width: 100vw;
   min-height: 100vh;
   font-family: "Montserrat";
   display: flex;
   flex-flow: column;
+  font-size: 100%;
 }

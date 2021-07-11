@@ -1,14 +1,9 @@
 import React from "react";
-import { Container } from "reactstrap";
 import WithLoader from "../WithLoader";
 import "./Page.css";
 
 const Page: React.FC = ({ children }) => {
-  return (
-    <Container className="themed-container" fluid="xl">
-      {children}
-    </Container>
-  );
+  return <div className="page">{children}</div>;
 };
 
 export default WithLoader(Page);
